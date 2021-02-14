@@ -1,15 +1,15 @@
-import * as React from 'react';
-import { App } from './App';
-import { Hello } from './components/Hello';
+import React, { Component } from "react";
+import { App } from "./App";
+import { Hello } from "./components/Hello";
 
-export interface IMainProps
+export interface MainProps
 {
     app: App;
 }
 
-export class Main extends React.Component<IMainProps, {}>
+export class Main extends Component<MainProps, {}>
 {
-    constructor(props: IMainProps)
+    constructor(props: MainProps)
     {
         super(props);
     }
@@ -18,9 +18,14 @@ export class Main extends React.Component<IMainProps, {}>
     {
         return (
             <>
-                Main app
-                <br />
-                <Hello test="Hello from a component..." />
+                <Hello message="React TypeScript Webpack Starter">
+                    <div className="features">
+                        <div>Webpack 5 + HMR</div>
+                        <div>TypeScript + React</div>
+                        <div>SCSS + Autoprefixing</div>
+                        <div>Jest</div>
+                    </div>
+                </Hello>
             </>
         );
     }
