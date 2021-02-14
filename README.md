@@ -10,10 +10,13 @@ A starter project for using React, TypeScript, SCSS and Webpack, along with Jest
 - SCSS + Autoprefixing 
 - Jest
 
-## Getting Started
+## 🚀 Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+Get up and running with these simple steps:
 
+1. Clone the project
+2. Run `npm install`
+3. Run `npm run dev`
 
 ## Development
 
@@ -59,5 +62,5 @@ npm run test
 * [Jest](https://jestjs.io/) - JavaScript Testing Framework.
 
 
-### License
+### 📝License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
