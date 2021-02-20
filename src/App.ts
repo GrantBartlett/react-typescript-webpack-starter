@@ -7,7 +7,6 @@ export class App
     constructor()
     {
         this.render();
-
     }
 
     public static addTwoNumbers(num1: number, num2: number): number

@@ -1,3 +1,7 @@
+const outputConfig = {
+    destPath: "./dist"
+};
+
 // Entry points
 // https://webpack.js.org/concepts/entry-points/ 
 const entryConfig = [
@@ -12,7 +16,7 @@ const copyPluginPatterns = {
     patterns: [
         { from: "./src/assets/images", to: "images" },
         { from: "./src/assets/fonts", to: "fonts" },
-        { from: "./src/assets/vendor", to: "vendor" },
+        { from: "./src/assets/vendor", to: "js" },
     ]
 };
 
@@ -20,18 +24,17 @@ const copyPluginPatterns = {
 // Dev server setup
 // https://webpack.js.org/configuration/dev-server/
 const devServer = {
-    contentBase: './dist',
+    contentBase: outputConfig.destPath,
     // https: true,
     // port: "8080",
-    // host: "your-ip4-address",
+    // host: "0.0.0.0",
     // disableHostCheck: true
 };
 
 
 // SCSS compile
 const scssConfig = {
-    destPath: "css",
-    destFileName: "app.min.css"
+    destFileName: "css/app.min.css"
 };
 
 
@@ -51,3 +54,4 @@ module.exports.entryConfig = entryConfig;
 module.exports.scssConfig = scssConfig;
 module.exports.devServer = devServer;
 module.exports.terserPluginConfig = terserPluginConfig;
+module.exports.outputConfig = outputConfig;

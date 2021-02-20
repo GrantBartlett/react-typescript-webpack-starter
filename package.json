@@ -1,6 +1,6 @@
 {
     "name": "react-typescript-webpack-starter",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "A starter project for using React, TypeScript, SCSS and Webpack, along with Jest for writing tests.",
     "main": "index.js",
     "scripts": {

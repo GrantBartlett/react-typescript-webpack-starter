@@ -4,7 +4,6 @@ export interface HelloProps
 {
     message: string;
 }
-
 export class Hello extends Component<HelloProps, {}>
 {
     public render(): JSX.Element
