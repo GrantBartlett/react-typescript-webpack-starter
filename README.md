@@ -18,6 +18,68 @@ Get up and running with these simple steps:
 2. Run `npm install`
 3. Run `npm run dev`
 
+
+## Configuration
+Optional configuration for the project can be done in the following files below.
+
+Open [env.config.js](/env.config.js) and you will see the default configuration for the project.
+
+
+| Config      | Description |
+| ----------- | ----------- |
+| `.browerslistrc`      | Open [.browserslist](/.browserslist) to configure Browser support for TypeScript + SCSS compiliation. [Read more here about Browerslist](https://github.com/browserslist/browserslist). Defaults are set for last 2 versions, > 1% and IE 11.   |
+| `outputConfig.destPath` | The folder in which you want your app to compile to. By default this is `dist`.               |
+| `entryConfig` | Webpack Entry points, by default this will look for the TypeScript + SCSS entry point files.  More info on [Entry points here](https://webpack.js.org/concepts/entry-points/ )               |
+| `copyPluginPatterns.patterns` | Configure folders you want copied over when compiling your app. Useful to copy over entire folder structures of images or fonts. |
+| `devServer` | Configure the Webpack development server. Enable `https`, specify a particular `port`, or `host`. [More information on these options here](https://webpack.js.org/configuration/dev-server/)
+| `scssConfig.destFileName` | Specify the output for your css. E.g `css/app.css`
+| `terserPluginConfig` | Full [Terser config can be found here](https://webpack.js.org/plugins/terser-webpack-plugin/#terseroptions).
+
+
+## Images, Fonts and output 
+
+Here's an example of the default generated output to our `dist` folder.
+```
+- index.html
+-- js
+-- css
+-- fonts
+---- some-font-file.woff
+-- images
+---- path-to-example-image.jpg
+```
+
+- By default, fonts and images are copied to the `dist` folder.
+- To include a reference to an image or font, it should be relative to where your css would output.
+
+For example: 
+
+`stylesheets/some-folder/some-file-somewhere.scss`
+```css
+.example {
+    background-image: url("../images/path-to-image-example.jpg");
+}
+
+@font-face {
+    font-family: "Example-font";
+    src: url("../fonts/some-font-file.woff");
+}
+``` 
+
+Would output to the folder `css/app.css` 
+
+```
+- index.html
+-- js
+-- css
+---- app.css
+-- fonts
+---- some-font-file.woff
+-- images
+---- path-to-example-image.jpg
+```
+
+
 ## Development
 
 ```shell
@@ -30,19 +92,6 @@ Note: This will compile to a `dist` folder.
 ```shell
 npm run build
 ```
-
-## Configuration
-Optional configuration for the project can be done in the following files below.
-
-- Open [.browerslistrc](/.browserslist) to configure Browser support for TypeScript + SCSS compiliation. [Read more here about Browerslist](https://github.com/browserslist/browserslist).
-
-- Open [env.config.js](/env.config.js) and you will see the default configuration for the project.
-
-    - [Webpack devserver](https://webpack.js.org/configuration/dev-server/) - configure our local development server, e.g hostname or port.
-    - [Webpack copyWebpackPlugin](https://webpack.js.org/plugins/copy-webpack-plugin/) - folders to copy over to our dist, e.g fonts.
-    - [Webpack terserConfig](https://webpack.js.org/plugins/terser-webpack-plugin/#terseroptions) - options for production compilation. 
-    - [SCSS](https://sass-lang.com/) - the destination and filename to compile SCSS to.
-
 
 ## Tests
 You can create tests in the `src/__tests__` folder. 
