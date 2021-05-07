@@ -2,13 +2,12 @@
 
 # React TypeScript Webpack Starter
 
-A starter project for using React, TypeScript, SCSS and Webpack, along with Jest for writing tests.
+A starter project for using React, TypeScript, SCSS and Webpack.
 
 ## Features
 - Webpack 5 + HMR
 - TypeScript + React
 - SCSS + Autoprefixing 
-- Jest
 
 ## 🚀 Getting Started
 
@@ -93,13 +92,7 @@ Note: This will compile to a `dist` folder.
 npm run build
 ```
 
-## Tests
-You can create tests in the `src/__tests__` folder. 
-Tests are handled by [Jest](https://jestjs.io/)
 
-```shell
-npm run test
-```
 
 
 ### Build tools
@@ -108,7 +101,6 @@ npm run test
 * [TypeScript](https://www.typescriptlang.org) - TypeScript is a superset of JavaScript that compiles to clean JavaScript.
 * [Webpack 5](https://webpack.js.org/) - App bundler for JavaScript.
 * [SCSS](https://sass-lang.com/) - Preprocessor for SCSS to CSS.
-* [Jest](https://jestjs.io/) - JavaScript Testing Framework.
 
 
 ### 📝License
