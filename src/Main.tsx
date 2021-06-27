@@ -23,7 +23,6 @@ export class Main extends Component<MainProps, {}>
                         <div>Webpack 5 + HMR</div>
                         <div>TypeScript + React</div>
                         <div>SCSS + Autoprefixing</div>
-                        <div>Jest</div>
                     </div>
                 </Hello>
             </>
