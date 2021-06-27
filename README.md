@@ -18,6 +18,10 @@ Get up and running with these simple steps:
 3. Run `npm run dev`
 
 
+## Class & Functional stubs
+In the `master` branch you can find the class based starter. In the branch `functional` you can find the functional based starter.
+
+
 ## Configuration
 Optional configuration for the project can be done in the following files below.
 
