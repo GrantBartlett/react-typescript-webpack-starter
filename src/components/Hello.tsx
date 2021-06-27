@@ -1,20 +1,18 @@
-import React, { Component } from "react";
+import React, { FC } from "react";
 
 export interface HelloProps
 {
     message: string;
 }
-export class Hello extends Component<HelloProps, {}>
+
+export const Hello: FC<HelloProps> = (props) => 
 {
-    public render(): JSX.Element
-    {
-        return (
-            <div className="hello">
-                <h1>{this.props.message}</h1>
-                <div>
-                    {this.props.children}
-                </div>
+    return (
+        <div className="hello">
+            <h1>{props.message}</h1>
+            <div>
+                {props.children}
             </div>
-        );
-    }
+        </div>
+    );
 }
