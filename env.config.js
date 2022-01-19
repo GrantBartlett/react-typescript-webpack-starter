@@ -1,3 +1,5 @@
+const path = require('path');
+
 const outputConfig = {
     destPath: "./dist"
 };
@@ -24,7 +26,9 @@ const copyPluginPatterns = {
 // Dev server setup
 // https://webpack.js.org/configuration/dev-server/
 const devServer = {
-    contentBase: outputConfig.destPath,
+    static: {
+        directory: path.join(__dirname, outputConfig.destPath),
+    },
     // https: true,
     // port: "8080",
     // host: "0.0.0.0",
