@@ -1,6 +1,6 @@
-import { createElement } from "react";
-import ReactDOM from "react-dom";
+import React from "react";
 import { Main } from "./Main";
+import { createRoot } from "react-dom/client";
 
 export class App
 {
@@ -9,14 +9,10 @@ export class App
         this.render();
     }
 
-    public static addTwoNumbers(num1: number, num2: number): number
-    {
-        return num1 + num2;
-    }
-
     private render(): void
     {
-        ReactDOM.render(createElement(Main, { app: this }), document.getElementById("app") || document.createElement("div"));
+        const root = createRoot(document.getElementById("app") || document.createElement("div"));
+        root.render(React.createElement(Main, { app: this }, null));
     }
 }
 

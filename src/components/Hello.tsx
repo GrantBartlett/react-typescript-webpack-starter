@@ -3,8 +3,15 @@ import React, { Component } from "react";
 export interface HelloProps
 {
     message: string;
+    children: any;
 }
-export class Hello extends Component<HelloProps, {}>
+
+interface HelloState
+{
+
+}
+
+export class Hello extends Component<HelloProps, HelloState>
 {
     public render(): JSX.Element
     {

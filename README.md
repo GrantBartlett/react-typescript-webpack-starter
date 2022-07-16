@@ -6,7 +6,7 @@ A starter project for using React, TypeScript, SCSS and Webpack.
 
 ## Features
 - Webpack 5 + HMR
-- TypeScript + React
+- TypeScript + React 18
 - SCSS + Autoprefixing 
 
 ## 🚀 Getting Started
