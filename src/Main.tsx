@@ -7,7 +7,11 @@ export interface MainProps
     app: App;
 }
 
-export class Main extends Component<MainProps, {}>
+interface MainState 
+{
+}
+
+export class Main extends Component<MainProps, MainState>
 {
     constructor(props: MainProps)
     {
@@ -17,15 +21,13 @@ export class Main extends Component<MainProps, {}>
     public render(): JSX.Element
     {
         return (
-            <>
-                <Hello message="React TypeScript Webpack Starter">
-                    <div className="features">
-                        <div>Webpack 5 + HMR</div>
-                        <div>TypeScript + React</div>
-                        <div>SCSS + Autoprefixing</div>
-                    </div>
-                </Hello>
-            </>
+            <Hello message="React TypeScript Webpack Starter">
+                <div className="features">
+                    <div>Webpack 5 + HMR</div>
+                    <div>TypeScript + React</div>
+                    <div>SCSS + Autoprefixing</div>
+                </div>
+            </Hello>
         );
     }
 }
