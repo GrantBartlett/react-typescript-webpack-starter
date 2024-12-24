@@ -1,7 +1,12 @@
+## Hey 👋
+Hey, I'm Grant, A Freelance Software Developer. I help agencies, startups, and individuals stand out by creating exceptional websites, mobile apps, and digital experiences. Based in Surrey, I work with clients in London and internationally, providing flexible, tailored solutions for every project.
+
+If you're looking for a mobile app, a responsive website, or a unique digital solution, I'm here to deliver standout results crafted to your needs.  Say hi 👋  [Get in touch](https://grant-bartlett.com/)
+
+
 ![logo](https://user-images.githubusercontent.com/6104940/107880275-b04f2b80-6ed5-11eb-9852-de05425070cc.png)
 
 # React TypeScript Webpack Starter
-
 A starter project for using React, TypeScript, SCSS and Webpack.
 
 ## Features
